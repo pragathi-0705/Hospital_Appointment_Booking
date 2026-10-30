@@ -1,0 +1,23 @@
+{
+  "name": "hospital-booking-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Hospital Appointment Booking System",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/utils/seedData.js",
+    "setup-admin": "node src/utils/setupAdmin.js",
+    "view-data": "node src/utils/viewData.js",
+    "test:concurrency": "node test-concurrency.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0"
+  }
+}
